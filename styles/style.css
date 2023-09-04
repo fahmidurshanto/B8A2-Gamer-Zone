@@ -1,0 +1,43 @@
+/* Navbar section styles */
+nav {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.nav-container {
+  background-color: rgba(238, 130, 238, 0.199);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-logo-title-container {
+  display: flex;
+  align-items: center;
+}
+.nav-logo-title-container img {
+  width: 100px;
+  margin-right: 20px;
+}
+.nav-logo-title-container h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.menus-container a {
+  margin-right: 32px;
+  text-decoration: none;
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menus-container a i {
+  color: #f61c0d;
+  width: 40px;
+  height: 30px;
+}
+#youtube:hover {
+  width: 262px;
+  height: 56px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}

@@ -1,3 +1,5 @@
+/* Font family (Google font) */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Open+Sans&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 /* Navbar section styles */
 nav {
   max-width: 1320px;
@@ -22,7 +24,13 @@ nav {
   font-size: 45px;
   font-weight: 700;
 }
+.menus-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
 .menus-container a {
+  text-align: center;
   margin-right: 32px;
   text-decoration: none;
   color: #3c354f;
@@ -36,8 +44,43 @@ nav {
   height: 30px;
 }
 #youtube:hover {
+  text-align: center;
   width: 262px;
-  height: 56px;
+  padding: 5px;
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 576px) {
+  /* Navbar  section mobile responsive styles */
+  body {
+    margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+  }
+  .nav-container,
+  .menus-container {
+    flex-direction: column;
+  }
+
+  .menus-container a {
+    margin-top: 30px;
+  }
+}
+
+/* Tablet responsive styles */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Navbar  section tablet responsive styles */
+  nav {
+    width: 100%;
+  }
+  .nav-container {
+    flex-direction: column-reverse;
+  }
+
+  .menus-container a {
+    margin-top: 30px;
+  }
 }

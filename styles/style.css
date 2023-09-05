@@ -113,12 +113,15 @@ nav {
   color: #f948b2;
 }
 
-.section-description {
+.section-description,
+.play-instantly-description {
   color: #534c64;
   font-size: 18px;
   font-weight: 400;
 }
-
+.play-instantly-description {
+  text-align: center;
+}
 .section-btn {
   color: #fff;
   font-size: 20px;
@@ -141,6 +144,76 @@ nav {
   font-size: 32px;
   font-weight: 700;
 }
+.text-pink {
+  color: #ff42a5;
+}
+/* Online Games section styles */
+.online-games-title,
+.play-instantly-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+}
+.play-instantly-title {
+  text-align: center;
+}
+.online-games-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* card section styles */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card img {
+  width: 75%;
+}
+.card:hover {
+  transform: scale(1.1);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.card-description {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  width: 340px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Play Instantly section styles */
+.my-talking-angel {
+  width: 318px;
+  border-radius: 8px;
+  border: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+}
+
+.play-container {
+  max-width: 1320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.play-container div {
+  width: 40%;
+}
 /* Mobile responsive styles */
 @media screen and (max-width: 576px) {
   /* Navbar  section mobile responsive styles */
@@ -150,6 +223,8 @@ nav {
   }
 
   /* shared styles */
+  .card-container,
+  .play-container,
   .gamer-container,
   .banner-container,
   .nav-container,
@@ -159,15 +234,19 @@ nav {
 
   /* Banner section mobile responsive styles */
   .banner-container div {
-    width: 100%;
+    width: 50%;
+    border: 2px solid red;
     margin: 20px auto;
   }
   .banner-img img {
-    width: 100%;
+    max-width: 500px;
+
+    margin: auto;
   }
   .menus-container a {
     margin-bottom: 30px;
   }
+  /* .card-container, */
   .gamer-container,
   .banner-container div,
   .banner-container h2,
@@ -195,6 +274,28 @@ nav {
   .text-div {
     text-align: center;
     width: 100%;
+  }
+
+  .card img {
+    width: 75%;
+  }
+
+  /* Play Instantly section styles */
+  .play-instantly-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .play-container {
+    max-width: 576px;
+  }
+  .play-container div {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .play-img {
+    max-width: 450px;
+    margin: 0 auto;
   }
 }
 
@@ -230,5 +331,24 @@ nav {
   .text-div {
     text-align: center;
     width: 100%;
+  }
+  /* Play Instantly section styles */
+  .play-instantly-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .play-container {
+    max-width: 992px;
+    flex-direction: column-reverse;
+  }
+  .play-container div {
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .play-img {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }

@@ -175,6 +175,14 @@ nav {
   .banner-container p {
     text-align: center;
   }
+
+  /* We are gamer section styles */
+  .gamer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
   .gamer-container {
     width: 100%;
   }
@@ -187,13 +195,6 @@ nav {
   .text-div {
     text-align: center;
     width: 100%;
-  }
-  /* We are gamer section styles */
-  .gamer-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
   }
 }
 
@@ -210,5 +211,24 @@ nav {
 
   .menus-container a {
     margin-top: 30px;
+  }
+
+  .gamer-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .gamer-container {
+    width: 100%;
+  }
+  .gamer-container img {
+    width: 100%;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .text-div {
+    text-align: center;
+    width: 100%;
   }
 }

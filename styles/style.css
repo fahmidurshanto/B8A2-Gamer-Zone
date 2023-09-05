@@ -11,6 +11,9 @@
 }
 
 /* Navbar section styles */
+.g {
+  color: #ff42a5;
+}
 nav {
   max-width: 1320px;
   margin: 0 auto;
@@ -83,11 +86,61 @@ nav {
   gap: 10px;
   border-radius: 48px;
   background-color: #ff42a5;
+  border: 0;
 }
 .banner-btn-2 {
   background-color: #4ec5f7;
+  border: 0;
 }
 
+/* We are gamer section styles */
+.gamer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 150px 100px;
+}
+.text-div {
+  text-align: right;
+  width: 35%;
+}
+.image-div img {
+  width: 75%;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #f948b2;
+}
+
+.section-description {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-btn {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 40px;
+
+  background-color: #ff42a5;
+  border-radius: 45px;
+  border: 0;
+}
+
+.section-upper-footer {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.section-footer {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+}
 /* Mobile responsive styles */
 @media screen and (max-width: 576px) {
   /* Navbar  section mobile responsive styles */
@@ -95,11 +148,16 @@ nav {
   nav {
     width: 100%;
   }
+
+  /* shared styles */
+  .gamer-container,
   .banner-container,
   .nav-container,
   .menus-container {
     flex-direction: column;
   }
+
+  /* Banner section mobile responsive styles */
   .banner-container div {
     width: 100%;
     margin: 20px auto;
@@ -110,14 +168,34 @@ nav {
   .menus-container a {
     margin-bottom: 30px;
   }
+  .gamer-container,
   .banner-container div,
   .banner-container h2,
   .banner-container h1,
   .banner-container p {
     text-align: center;
   }
+  .gamer-container {
+    width: 100%;
+  }
+  .gamer-container img {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .text-div {
+    text-align: center;
+    width: 100%;
+  }
+  /* We are gamer section styles */
+  .gamer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
 }
-/* Banner section mobile responsive styles */
 
 /* Tablet responsive styles */
 @media screen and (min-width: 577px) and (max-width: 992px) {

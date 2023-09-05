@@ -3,7 +3,8 @@
 
 /* shared styles */
 .menus-container,
-.banner-container {
+.banner-container,
+.nav-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,9 +17,6 @@ nav {
 }
 .nav-container {
   background-color: rgba(238, 130, 238, 0.199);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 .nav-logo-title-container {
   display: flex;
@@ -35,7 +33,6 @@ nav {
 }
 
 .menus-container a {
-  text-align: center;
   margin-right: 32px;
   text-decoration: none;
   color: #3c354f;
@@ -46,7 +43,9 @@ nav {
 .menus-container a i {
   color: #f61c0d;
   width: 40px;
-  height: 30px;
+}
+#youtube {
+  text-align: center;
 }
 #youtube:hover {
   text-align: center;
@@ -60,12 +59,12 @@ nav {
 
 .banner-container h2 {
   color: #0b0223;
-  text-align: center;
+  text-align: left;
   font-size: 48px;
   font-weight: 600;
 }
 .banner-container h1 {
-  text-align: center;
+  text-align: left;
   font-size: 95px;
   font-weight: 800;
   color: purple;
@@ -73,9 +72,20 @@ nav {
 
 .banner-container p {
   color: #534c64;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: 500;
+}
+.banner-btn,
+.banner-btn-2 {
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background-color: #ff42a5;
+}
+.banner-btn-2 {
+  background-color: #4ec5f7;
 }
 
 /* Mobile responsive styles */
@@ -85,15 +95,29 @@ nav {
   nav {
     width: 100%;
   }
+  .banner-container,
   .nav-container,
   .menus-container {
     flex-direction: column;
   }
-
+  .banner-container div {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .banner-img img {
+    width: 100%;
+  }
   .menus-container a {
-    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .banner-container div,
+  .banner-container h2,
+  .banner-container h1,
+  .banner-container p {
+    text-align: center;
   }
 }
+/* Banner section mobile responsive styles */
 
 /* Tablet responsive styles */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -101,7 +125,8 @@ nav {
   nav {
     width: 100%;
   }
-  .nav-container {
+  .nav-container,
+  .banner-container {
     flex-direction: column-reverse;
   }
 
